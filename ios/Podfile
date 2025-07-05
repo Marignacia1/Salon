@@ -33,6 +33,9 @@ target 'Runner' do
 
   pod 'GoogleUtilities', '8.0.0'
   pod 'Firebase/Core'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Storage'
   pod 'Firebase/Messaging'
 
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
@@ -41,5 +44,10 @@ end
 post_install do |installer|
   installer.pods_project.targets.each do |target|
     flutter_additional_ios_build_settings(target)
+    
+    # Fix for Firebase non-modular header issue
+    target.build_configurations.each do |config|
+      config.build_settings['CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES'] = 'YES'
+    end
   end
 end
