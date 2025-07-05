@@ -1,4 +1,4 @@
-name: Build iOS
+name: Build Windows
 
 on:
   push:
@@ -8,8 +8,8 @@ on:
   workflow_dispatch:
 
 jobs:
-  build-ios:
-    runs-on: macos-latest
+  build-windows:
+    runs-on: windows-latest
     
     steps:
     - uses: actions/checkout@v4
@@ -22,18 +22,16 @@ jobs:
     - name: Install dependencies
       run: flutter pub get
       
-    - name: Build iOS
-      run: flutter build ios --release --no-codesign
+    - name: Build Windows
+      run: flutter build windows --release
       
-    - name: Archive IPA
+    - name: Archive Windows Build
       run: |
-        cd build/ios/iphoneos
-        mkdir Payload
-        mv Runner.app Payload/
-        zip -r app.ipa Payload/
+        cd build/windows/x64/runner/Release
+        7z a -r windows-app.zip *
         
-    - name: Upload IPA
+    - name: Upload Windows Build
       uses: actions/upload-artifact@v4
       with:
-        name: ios-ipa
-        path: build/ios/iphoneos/app.ipa
+        name: windows-exe
+        path: build/windows/x64/runner/Release/windows-app.zip
