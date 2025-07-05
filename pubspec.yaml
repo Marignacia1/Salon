@@ -11,13 +11,14 @@ dependencies:
     sdk: flutter
 
   # Firebase Core (obligatorio)
-  firebase_core: ^2.32.0
+  firebase_core: ^3.1.1
 
-  # Servicios de Firebase (elige los que necesites)
-  cloud_firestore: ^4.8.0     # Base de datos
-  firebase_auth: ^4.12.0      # Autenticación
-  firebase_storage: ^11.7.0   # Almacenamiento
-  google_sign_in: ^6.1.5      # Login con Google
+# Servicios de Firebase
+  cloud_firestore: ^5.1.0
+  firebase_auth: ^5.1.1
+  firebase_storage: ^12.1.0
+  google_sign_in: ^6.2.1
+  firebase_messaging: ^15.0.4    # Login con Google
 
   # Dependencias UI/Utilidades
   table_calendar: ^3.0.9      # Calendario
@@ -27,8 +28,7 @@ dependencies:
   flutter_colorpicker: ^1.0.3  # Selector de color
   
   # Notificaciones
-  flutter_local_notifications: ^17.2.2  # Notificaciones locales
-  firebase_messaging: ^14.9.4           # Push notifications
+  flutter_local_notifications: ^17.2.2  # Notificaciones locales        # Push notifications
   timezone: ^0.9.4                      # Zona horaria para notificaciones programadas
   permission_handler: ^11.3.1           # Gestión de permisos
   local_notifier: ^0.1.6
