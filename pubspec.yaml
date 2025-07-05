@@ -1,0 +1,54 @@
+name: salon_de_belleza
+description: "Aplicación de gestión de citas con Firebase"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.8.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase Core (obligatorio)
+  firebase_core: ^2.32.0
+
+  # Servicios de Firebase (elige los que necesites)
+  cloud_firestore: ^4.8.0     # Base de datos
+  firebase_auth: ^4.12.0      # Autenticación
+  firebase_storage: ^11.7.0   # Almacenamiento
+  google_sign_in: ^6.1.5      # Login con Google
+
+  # Dependencias UI/Utilidades
+  table_calendar: ^3.0.9      # Calendario
+  intl: ^0.18.1               # Internacionalización
+  share_plus: ^7.0.1          # Compartir
+  provider: ^6.0.5            # Gestión de estado
+  flutter_colorpicker: ^1.0.3  # Selector de color
+  
+  # Notificaciones
+  flutter_local_notifications: ^17.2.2  # Notificaciones locales
+  firebase_messaging: ^14.9.4           # Push notifications
+  timezone: ^0.9.4                      # Zona horaria para notificaciones programadas
+  permission_handler: ^11.3.1           # Gestión de permisos
+  local_notifier: ^0.1.6
+
+dev_dependencies:
+  flutter_lints: ^3.0.0  
+  build_runner: ^2.4.6     # Mejores prácticas
+  flutter_launcher_icons: ^0.13.1  # Generador de iconos
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+# Configuración del icono de la app
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/Logo.jpeg"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+  adaptive_icon_background: "#6B46C1"
+  adaptive_icon_foreground: "assets/Logo.jpeg"

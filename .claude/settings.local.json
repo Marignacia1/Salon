@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/mnt/c/Users/M.Vargas/Documents/flutter/flutter/bin/flutter pub get)",
+      "Bash(dart pub:*)",
+      "WebFetch(domain:www.youtube.com)",
+      "Bash(rg:*)",
+      "Bash(flutter analyze:*)",
+      "Bash(dart analyze:*)",
+      "Bash(rm:*)",
+      "Bash(mv:*)",
+      "Bash(mkdir:*)"
+    ],
+    "deny": []
+  }
+}

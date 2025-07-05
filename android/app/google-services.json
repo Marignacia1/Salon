@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "356749768011",
+    "project_id": "salondebelleza-2f326",
+    "storage_bucket": "salondebelleza-2f326.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356749768011:android:9692236daaa789a012a4ce",
+        "android_client_info": {
+          "package_name": "com.example.tuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356749768011-miitnhoej4isp8o4fa6ngkks5etthhmv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tuapp",
+            "certificate_hash": "d1477ed05e63120f1d8bcad7dfaf8a75528ae1a8"
+          }
+        },
+        {
+          "client_id": "356749768011-ahpfnrkjm9jjuc3fv021v99h9cqcieer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Y3lZU6t3Y9EPKovO2ml3g4XXU16Y9ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356749768011-ahpfnrkjm9jjuc3fv021v99h9cqcieer.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "356749768011-lbirt4ke7pv15be861e846m1k1muhrad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApplication6"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:356749768011:android:6e6314d34789d2dc12a4ce",
+        "android_client_info": {
+          "package_name": "salon.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "356749768011-fpkdjrm054nmovie7e5kuvijk4rk92cf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "salon.app",
+            "certificate_hash": "d1477ed05e63120f1d8bcad7dfaf8a75528ae1a8"
+          }
+        },
+        {
+          "client_id": "356749768011-ahpfnrkjm9jjuc3fv021v99h9cqcieer.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD5Y3lZU6t3Y9EPKovO2ml3g4XXU16Y9ow"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "356749768011-ahpfnrkjm9jjuc3fv021v99h9cqcieer.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "356749768011-lbirt4ke7pv15be861e846m1k1muhrad.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.flutterApplication6"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
