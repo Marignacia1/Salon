@@ -33,6 +33,8 @@ target 'Runner' do
   use_frameworks!
   use_modular_headers!
 
+  pod 'GoogleUtilities', '8.0.0' # <--- AÑADE ESTA LÍNEA AQUÍ
+
   flutter_install_all_ios_pods File.dirname(File.realpath(__FILE__))
 end
 
