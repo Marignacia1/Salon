@@ -9,24 +9,8 @@ import 'contactos_home_page.dart';
 import 'auth_wrapper.dart';
 import 'auth_service.dart';
 import 'notification_service_new.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:local_notifier/local_notifier.dart';
 
-// Handler para mensajes en background
-@pragma('vm:entry-point')
-Future<void> _firebaseMessagingBackgroundHandler(RemoteMessage message) async {
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
-  print('Mensaje recibido en background: ${message.messageId}');
-  
-  // Aquí puedes manejar la lógica de notificaciones en background
-  if (message.notification != null) {
-    await NotificationServiceNew().showInstantNotification(
-      title: message.notification!.title ?? 'Nueva notificación',
-      body: message.notification!.body ?? '',
-      payload: message.data['route'],
-    );
-  }
-}
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -34,8 +18,6 @@ void main() async {
   // Configuración de Firebase
   await _initializeFirebase();
 
-  // Configurar handler para mensajes en background
-  FirebaseMessaging.onBackgroundMessage(_firebaseMessagingBackgroundHandler);
 
   runApp(const SalonBellezaApp());
   
