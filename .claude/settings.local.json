@@ -9,7 +9,10 @@
       "Bash(dart analyze:*)",
       "Bash(rm:*)",
       "Bash(mv:*)",
-      "Bash(mkdir:*)"
+      "Bash(mkdir:*)",
+      "Bash(flutter build:*)",
+      "Bash(flutter doctor:*)",
+      "Bash(flutter.bat build:*)"
     ],
     "deny": []
   }
